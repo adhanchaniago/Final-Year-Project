@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Exo 2 Light'), local('Exo2-Light'), url(https://fonts.gstatic.com/s/exo2/v7/7cHrv4okm5zmbt6DCfs7wHo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo 2 Regular'), local('Exo2-Regular'), url(https://fonts.gstatic.com/s/exo2/v7/7cHmv4okm5zmbtYoK-s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Exo 2 Medium'), local('Exo2-Medium'), url(https://fonts.gstatic.com/s/exo2/v7/7cHrv4okm5zmbt7bCPs7wHo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Exo 2 Bold'), local('Exo2-Bold'), url(https://fonts.gstatic.com/s/exo2/v7/7cHrv4okm5zmbt6TDvs7wHo.ttf) format('truetype');
+}
+body {
+  background: #ebeff2;
+  font-family: "Exo 2";
+}
+.zone {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(ellipse at center, #78ABE5  0,#1A237E(72, 80, 173) 100%);
+  width: 80%;
+  height: 50%;
+  border: 5px dashed white;
+  text-align: center;
+  color: white;
+  z-index: 20;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+}
+.zone .btnCompression .active {
+  background:#78ABE5;
+  color: white;
+}
+.zone i {
+  text-align: center;
+  font-size: 10em;
+  color: #fff;
+  margin-top: 50px;
+}
+.zone .selectFile {
+  height: 50px;
+  margin: 20px auto;
+  position: relative;
+  width: 200px;
+}
+.zone label,
+.zone input {
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+.zone label {
+  background: #fff;
+  color: #78ABE5;
+  display: inline-block;
+  font-size: 1.2em;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 400;
+  box-shadow: 0 1px 1px gray;
+}
+.zone input[type=file] {
+  opacity: 0;
+}
+.zone.in {
+  color: white;
+  border-color: white;
+  background: radial-gradient(ellipse at center, #78ABE5 0,#1A237E 100%);
+}
+.zone.in i {
+  color: #fff;
+}
+.zone.in label {
+  background: #fff;
+  color: #78ABE5  ;
+}
+.zone.hover {
+  color: gray;
+  border-color: white;
+  background: #fff;
+  border: 5px dashed gray;
+}
+.zone.hover i {
+  color: #78ABE5;
+}
+.zone.hover label {
+  background: #fff;
+  color: #78ABE5  ;
+}
+.zone.fade {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+.btn {
+  background-color:  #fff;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 0.6}
+
+#myform {
+  text-align: center;
+  padding: 5px;
+  border: 1px dotted #ccc;
+  margin: 2%;
+}
+.qty {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
